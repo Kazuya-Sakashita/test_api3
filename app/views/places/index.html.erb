@@ -1,0 +1,7 @@
+<h1>Weathers#index</h1>
+
+<% @cities.each do |city| %>
+<div class="weatherbox">
+  <%= tag.div(class: 'weather', 'data-city-name': city) %>
+</div>
+<% end %>
